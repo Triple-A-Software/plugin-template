@@ -1,6 +1,9 @@
 {
 	"name": "{{plugin_name}}",
 	"version": "0.0.0",
+	"dependencies": {
+          "@cms-local/plugin-interface": "^0.0.0"
+        },
 	"devDependencies": {
           "@types/bun": "^1.0.8"
         }
