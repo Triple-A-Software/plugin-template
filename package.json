@@ -1,7 +1,7 @@
 {
 	"name": "{{plugin_name}}",
 	"version": "0.0.0",
-	 "devDependencies": {
-		 "@types/bun": "^1.0.8"
-         }
+	"devDependencies": {
+          "@types/bun": "^1.0.8"
+        }
 }
