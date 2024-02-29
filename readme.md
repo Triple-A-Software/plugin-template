@@ -1,1 +1,1 @@
-
+# {{plugin_name}}
