@@ -1,6 +1,9 @@
 {
 	"name": "{{plugin_name}}",
 	"version": "0.0.0",
+	"scripts": {
+          "build": "bun run build.js",
+	},
 	"dependencies": {
           "@cms-local/plugin-interface": "^0.0.0"
         },
