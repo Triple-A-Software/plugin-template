@@ -5,7 +5,8 @@
           "build": "bun run build.js"
 	},
 	"dependencies": {
-          "@cms-local/plugin-interface": "^0.0.0"
+          "@aaa-soft/plugin-interface": "0.1.1-alpha.17",
+          "@aaa-soft/cms-hooks": "0.1.0-alpha.3"
         },
 	"devDependencies": {
           "@types/bun": "^1.0.8"
