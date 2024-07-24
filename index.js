@@ -1,3 +1,3 @@
-import { definePlugin } from "@cms-local/plugin-interface";
+import { definePlugin } from "@aaa-soft/plugin-interface";
 
 export default definePlugin((ctx) => {});
