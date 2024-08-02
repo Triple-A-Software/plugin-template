@@ -19,7 +19,7 @@
 	"bin": "bun run my-plugin.js",
 	"build": "bun build src/server/index.ts --outfile my-plugin.js --minifiy",
 	"type": "service",
-	"files": ["glw-htmx.js"],
+	"files": ["my-plugin.js"],
 	"routes": {
 		"/products/": {
 			"type": "page",
