@@ -1,0 +1,11 @@
+build:
+{% if language == "rust" %}
+    cargo build --release
+{% elif language == "typescript" %}
+    bun run build
+{% elif language == "go" %}
+    GOOS=linux GOARCH=amd64 go build main
+{% else %}
+    echo "{{language}} does not need a build step"
+    echo "just make sure all the needed files (including the runtime for example) are included in the packaged plugin"
+{% endif %}
