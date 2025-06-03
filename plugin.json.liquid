@@ -1,0 +1,27 @@
+{
+    "$schema": "https://neleto.io/schemas/main/plugin_manifest_schema.json",
+	"name": "{{plugin_name}}",
+	"version": "0.0.0",
+    {% if language == "rust" %}
+        "bin": "./target/release/{{plugin_name}}",
+        "include_files": ["./target/release/{{plugin_name}}"],
+    {% elif language == "typescript" %}
+        "bin": "./server",
+        "include_files": ["./server"],
+    {% elif language == "python" %}
+        "bin": "./.bin/python main.py",
+        "include_files": ["./.bin/**/*", "./**/*.py", "./templates/**/*"],
+    {% elif language == "php" %}
+        "bin": "./.bin/php -S localhost:$PORT -t .",
+        "include_files": ["./.bin/**/*", "./**/*.php"],
+    {% elif language == "go" %}
+        "bin": "./main",
+        "include_files": ["./main"],
+    {% endif %}
+    "api": [
+        {
+            "route": "/",
+            "allowedRoles": ["admin", "developer", "author", "editor"]
+        }
+    ]
+}
